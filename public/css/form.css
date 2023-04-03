@@ -1,0 +1,278 @@
+:root{
+    --tagify-dd-color-primary:rgba(53,149,246,0);
+    --tagify-dd-bg-color: var(--pagebackground);
+}
+.tagify{	
+	--placeholder-color: rgba(255,255,255,0.6);
+    --placeholder-color-focus: rgba(255,255,255,0.6);
+	}
+
+
+
+.fieldset{display:grid; grid-template-columns: 1fr 1fr;}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 10px 5px;
+    border: 0px;
+    border-radius: var(--radius);
+	background: var(--pagebackground);
+    font-family: inherit;
+    color: var(--defaultcolor);
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Change the white to any color when Autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 80px #303030 inset !important;
+	-webkit-text-fill-color: var(--defaultcolor);
+}
+
+textarea, select, input:focus {
+    outline: 0;
+}
+
+select {
+	padding: 5px 60px 5px 10px;
+	font-family: var(--primaryfont);
+    border: none;
+    display: inline-block;
+    line-height: 1.5em;
+    margin: 0;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.button {
+	position:relative;
+    font-family: var(--primaryfont);
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: clamp(1rem,0.9vw,1.2rem);
+    background: var(--pagebackground);
+    border: 0px;
+    color: #fff;
+    transition: all ease 0.5s;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+	white-space: nowrap;
+	text-shadow: 1px 1px 3px #484848;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.button:hover {
+    background: var(--primarycolor);
+    background: -moz-linear-gradient(45deg, var(--primarycolor) 0%, var(--secondarycolor) 100%)!important;
+    background: -webkit-linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    background: linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--primarycolor)', endColorstr='var(--secondarycolor)',GradientType=1 )!important;
+	box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+}
+
+
+.button.small{
+    padding: 0.5rem 1rem;
+    font-size: clamp(0.8rem,0.8vw,1rem);
+}
+.button.tiny{
+    padding: 0.3rem 0.5rem;
+    font-size: clamp(0.6rem,0.6vw,1rem);
+}
+
+.button.bell:after{
+    position: absolute;
+    top: -5px;
+    padding: 1px 3px 0px 6px;
+    background: var(--primarycolor);
+    content: '2';
+    display: block;
+    border-radius: 20px;
+    right: 1px;
+    font-size: 0.8rem;
+	background: var(--primarycolor);
+    background: -moz-linear-gradient(45deg, var(--primarycolor) 0%, var(--secondarycolor) 100%)!important;
+    background: -webkit-linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    background: linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--primarycolor)', endColorstr='var(--secondarycolor)',GradientType=1 )!important;
+	box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+}
+
+
+/* Inserate START */
+
+.d-none{display:none!important;}
+
+.form-group{margin-bottom: 1rem; position: relative;}
+.form-group > label, .price-group label {margin-bottom: 0.5rem; display: block;}
+
+.tagify{	
+	background: var(--pagebackground);
+	border-radius: var(--radius);
+	width: 100%;
+	border: 0px!important;
+	}
+	
+.tagify__input{
+	color: #FFF!important;
+}
+
+/* Styles for the file input replacement label */
+.attachments {
+	display: contents;
+    list-style: none;
+    padding: 0;
+	line-height: 0;
+	margin: 0px;
+}
+
+.attachments li {
+	display: inline-flex;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.attachment_add,
+.attachment {
+    padding: 0px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+	background: var(--pagebackground);
+}
+	
+.custom-file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.custom-file-upload img {
+	object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+	
+	
+.plus{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -16px;
+    left: 50%;
+    font-size: 2.5rem;
+    color: var(--primarycolor);
+}
+
+.delete{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 0.5rem;
+	background: var(--primarycolor);
+}
+
+select {
+	border: none;
+	border-radius: 4px;
+	display: inline-block;
+	width: 100%;
+	line-height: 1.5em;
+	padding-right: 60px;
+	background: var(--pagebackground);
+    color: var(--defaultcolor);
+
+	/* reset */
+	margin: 0;      
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--primarycolor) 50%),
+    linear-gradient(135deg, var(--primarycolor) 50%, transparent 50%),
+    linear-gradient(to right, var(--primarycolor), var(--primarycolor));
+  background-position:
+    calc(100% - 20px) calc(0.8em + 2px),
+    calc(100% - 15px) calc(0.8em + 2px),
+    calc(100% - 2.5em) 0.4em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.3em;
+  background-repeat: no-repeat;
+}
+
+select option:hover,
+select option:focus,
+select option:active,
+select option:checked {
+  background: linear-gradient(#5A2569, #5A2569);
+}
+
+.select:invalid {
+    color: var(--defaultcolor);
+    font-size: 1rem;
+    font-family: var(--primaryfont);
+}
+
+/* Inserate ENDE */
+
+
+.price-group{
+	display:block;
+}
+.price-group div{margin-bottom: 1rem;}
+
+#eurovalue{margin-top: 0.5rem; margin-bottom: 0px; min-height: 18px;}
+
+@media only screen and (min-width:40em){
+
+}
+
+@media only screen and (min-width:64em){
+	.price-group{
+		display:flex;
+		gap:2rem;
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 20.5 20.5"
+   aria-hidden="true"
+   class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1yjpyg1 r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"
+   data-testid="verificationBadge"
+   version="1.1"
+   id="svg965"
+   width="20.5"
+   height="20.5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs969">
+    <linearGradient
+       id="linearGradient2698">
+      <stop
+         style="stop-color:#db6316;stop-opacity:1;"
+         offset="0"
+         id="stop2694" />
+      <stop
+         style="stop-color:#de881e;stop-opacity:1;"
+         offset="1"
+         id="stop2696" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient2698"
+       id="linearGradient2700"
+       x1="16.934275"
+       y1="16.186731"
+       x2="7.5669527"
+       y2="7.0466833"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="g963"
+     style="fill:#1d9bf0;fill-opacity:1"
+     transform="translate(-1.75,-1.75)">
+    <path
+       d="m 22.25,12 c 0,-1.43 -0.88,-2.67 -2.19,-3.34 0.46,-1.39 0.2,-2.9 -0.81,-3.91 C 18.24,3.74 16.73,3.48 15.34,3.94 14.68,2.63 13.43,1.75 12,1.75 10.57,1.75 9.33,2.63 8.67,3.94 7.27,3.48 5.76,3.74 4.75,4.75 3.74,5.76 3.49,7.27 3.95,8.66 2.64,9.33 1.75,10.57 1.75,12 c 0,1.43 0.89,2.67 2.2,3.34 -0.46,1.39 -0.21,2.9 0.8,3.91 1.01,1.01 2.52,1.26 3.91,0.81 0.67,1.31 1.91,2.19 3.34,2.19 1.43,0 2.68,-0.88 3.34,-2.19 1.39,0.45 2.9,0.2 3.91,-0.81 1.01,-1.01 1.27,-2.52 0.81,-3.91 1.31,-0.67 2.19,-1.91 2.19,-3.34 z m -11.71,4.2 -3.74,-3.74 1.41,-1.42 2.26,2.26 4.8,-5.23 1.47,1.36 z"
+       id="path961"
+       style="fill:url(#linearGradient2700);fill-opacity:1" />
+  </g>
+</svg>

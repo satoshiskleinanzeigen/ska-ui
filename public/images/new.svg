@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1049"
+   width="466.40295"
+   height="465.4054"
+   viewBox="0 0 466.40295 465.4054"
+   sodipodi:docname="new.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1053">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1978">
+      <stop
+         style="stop-color:#de881e;stop-opacity:1;"
+         offset="0"
+         id="stop1974" />
+      <stop
+         style="stop-color:#db6316;stop-opacity:0.98431373;"
+         offset="1"
+         id="stop1976" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1978"
+       id="linearGradient1980"
+       x1="60.007874"
+       y1="-171.99977"
+       x2="276.5845"
+       y2="107.4238"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1051"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="0.64239388"
+     inkscape:cx="-31.911885"
+     inkscape:cy="150.9977"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1055" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1055"
+     transform="translate(175.72974,176.31941)">
+    <path
+       id="rect1731"
+       style="fill:#6f440f;fill-opacity:1"
+       d="m -151.72974,-176.01474 h 22.78133 l 24,22.82064 h -70.78133 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path1735"
+       style="fill:#6f440f;fill-opacity:1"
+       d="m 290.6732,242.30466 v 22.78133 l -22.82064,24 v -70.78133 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect1632"
+       style="fill:url(#linearGradient1980);fill-opacity:1"
+       d="m -151.70024,-176.11794 215.74448,-0.20147 226.55037,225.302198 -10e-6,216.093362 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:67.0374px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.201112"
+       x="70.585579"
+       y="-97.974037"
+       id="text1793"
+       transform="rotate(44.948696)"
+       inkscape:label="text1793"><tspan
+         sodipodi:role="line"
+         id="tspan1791"
+         x="70.585579"
+         y="-97.974037"
+         style="fill:#ffffff;stroke-width:0.201112">NEU</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:47.797px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani Bold';text-align:center;letter-spacing:4px;text-anchor:middle;fill:#ff3cff;fill-opacity:1;stroke-width:0.327701"
+       x="77.750687"
+       y="-45.64698"
+       id="text1847"
+       transform="rotate(44.948696)"
+       inkscape:label="text1847"><tspan
+         sodipodi:role="line"
+         id="tspan1845"
+         x="79.000679"
+         y="-45.64698"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:47.797px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani Bold';fill:#ffffff;stroke-width:0.327701">EINGESTELLT</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,417 @@
+/* rajdhani-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rajdhani-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/rajdhani-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rajdhani-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rajdhani-v15-latin-regular.svg#Rajdhani') format('svg'); /* Legacy iOS */
+}
+/* rajdhani-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rajdhani-v15-latin-500.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/rajdhani-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rajdhani-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rajdhani-v15-latin-500.svg#Rajdhani') format('svg'); /* Legacy iOS */
+}
+/* rajdhani-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/rajdhani-v15-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/rajdhani-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rajdhani-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rajdhani-v15-latin-600.svg#Rajdhani') format('svg'); /* Legacy iOS */
+}
+/* rajdhani-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/rajdhani-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/rajdhani-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rajdhani-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rajdhani-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rajdhani-v15-latin-700.svg#Rajdhani') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Satoshi Symbol';
+    src: url('../fonts/Satoshi_Symbol.woff2') format('woff2'),
+        url('../fonts/Satoshi_Symbol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+i.sats{
+    color: var(--primarycolor);
+    display: inline-table;
+    font-family: 'Satoshi Symbol';
+    font-size: 36px;
+    transform: rotate(3.7285rad);
+    font-style: normal;
+    width: 20px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primaryfont: 'Rajdhani';
+	--defaultcolor: #ffffff;
+    --primarycolor: #DB6316;
+    --secondarycolor: #DE881E;
+	--profiletransparency: 0.9;
+    --pagebackground: #181e27;
+	--profilebackground: 37, 45, 56,;
+	--boxbackground: #252d38;
+	--fieldbackground: #d9d9d9;
+    --cards: #192330;
+    --barsandnav: #192330;
+    --radius: 4px;
+	
+}
+
+html{-webkit-tap-highlight-color: transparent;}
+body {
+    background: var(--pagebackground);
+    color: var(--defaultcolor);
+    font-family: var(--primaryfont);
+    margin: 0rem;
+    padding: 0rem;
+}
+
+h1{text-align: center;}
+h2{font-weight: 600; margin-top: 0; margin-bottom: 0.5rem;}
+
+.checklist {list-style-type: none; padding: 0px;}
+.checklist li {margin-left: 20px;}
+.checklist li:before {font-family: "Font Awesome 6 Free"; font-weight: 600; content: "\f00c"; padding-right: 10px; margin-left: -16px; color: var(--primarycolor);}
+
+.errorlist {list-style-type: none; padding: 0px;}
+.errorlist li {margin-left: 20px;}
+.errorlist li:before {font-family: "Font Awesome 6 Free"; font-weight: 600; content: "\f06a"; padding-right: 10px; margin-left: -16px; color: var(--primarycolor);}
+
+
+a{	
+	color: var(--primarycolor);
+	text-decoration: none;
+}
+img{max-width: 100%;}
+
+.gradient {
+    background: var(--primarycolor);
+    background: -moz-linear-gradient(45deg, var(--primarycolor) 0%, var(--secondarycolor) 100%)!important;
+    background: -webkit-linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    background: linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--primarycolor)', endColorstr='var(--secondarycolor)',GradientType=1 )!important;
+    color: #FFF!important;
+}
+
+#lightboxOverlay{
+	background: rgba(0, 0, 0, 0.9);
+	backdrop-filter: blur(3px);
+	filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    backface-visibility: hidden;
+}
+
+header {
+	position: relative;
+    top: 0px;
+    width: 100%;
+	z-index: 499;
+}
+
+.header_line1{
+    background: rgba(37, 45, 56, 0.6);
+    transition: all ease 0.6s;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    backface-visibility: hidden;
+}
+
+/*--- Usermenu ---*/
+.usermenu_icon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: var(--pagebackground);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    z-index: 40;
+    border: 2px solid var(--primarycolor);
+	margin-left: 1rem;
+}
+.usermenu:hover .usermenu_icon{background: var(--boxbackground);}
+.usermenu_overlay{display:none;position:absolute; z-index: 30; right:0px;top:0px; margin-top: 53px;}
+.usermenu_overlay .headline{border-bottom:1px solid #fff;color: #fff;padding-bottom: 10px;margin-bottom:10px;}
+.usermenu{position:relative;right:0;font-size: 0.9em;text-transform:uppercase;}
+.usermenu_overlay_content{padding:1rem;width:245px;background: rgba(37, 45, 56, 0.6);}
+/*--- Usermenu ---*/
+
+.search_options{
+	display: none;
+    background: rgba(37, 45, 56, 1.0);
+	padding: 2rem 0;
+	backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+	position: relative;
+    z-index: -1;
+}
+.search_options.open{
+	display: block;
+}
+
+#search_form{
+	display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.noresults{    max-width: 400px; text-align: center; margin: auto;}
+
+.logo {
+	position: relative;
+    display: block;
+    padding: 0rem 0rem 0.2rem 0;
+    color: #fff;
+    width: 250px;
+    padding: 5px 0px 0px 0px;
+}
+.logo span{
+	font-weight: 600;
+	font-size: 2rem;
+}
+.logo i.sats{
+	font-size: 40px;
+	background: -webkit-linear-gradient(var(--primarycolor), var(--secondarycolor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo_mobile {
+	position:relative;
+	display:block;
+	color: #fff;
+}
+.logo_mobile span{
+	font-weight: 600;
+	font-size: 2rem;
+}
+.logo_mobile i.sats{
+	font-size: 40px;
+	background: -webkit-linear-gradient(var(--primarycolor), var(--secondarycolor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.useraction{
+	display:flex;
+	align-items: center;
+    justify-content: center;
+	padding: 0.5rem 0;
+	gap: 3px;
+	}
+
+.dreadmore a{font-weight: 600;}
+.readmore{
+	background:none;
+	border:none;
+	color: var(--primarycolor);
+    font-family: var(--primaryfont);
+	font-size: 1rem;
+	padding: 0px;
+	font-weight: 600;
+	cursor:pointer;
+}
+
+/* Content-Pages */
+.content_box ul {list-style-type: none; padding: 0px;}
+.content_box ul li {margin-left: 20px; margin-bottom: 0.5rem;}
+.content_box ul li:before {font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f105"; padding-right: 10px; margin-left: -16px; color: var(--primarycolor);}
+
+/* Loading */
+.lds-ring {display: inline-block; position: relative; width: 80px; height: 80px;}
+.lds-ring div { box-sizing: border-box; display: block; position: absolute; width: 64px; height: 64px; margin: 8px; border: 8px solid #fff; border-radius: 50%; animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; border-color: #fff transparent transparent transparent;}
+.lds-ring div:nth-child(1) {animation-delay: -0.45s;}
+.lds-ring div:nth-child(2) {animation-delay: -0.3s;}
+.lds-ring div:nth-child(3) {animation-delay: -0.15s;}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tooltip text */
+.tooltip{
+	position:relative;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 90px;
+    font-size: 0.9rem;
+    margin-left: -115px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip i{color: var(--primarycolor); font-size: 1.0rem;}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 33px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Taglist */
+.taglist{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.taglist li{
+	position:relative;
+}
+
+.taglist > li > a{
+	background: var(--boxbackground);
+	color: var(--defaultcolor);
+	border-radius: var(--radius);
+	display:block;
+	padding: 1rem;
+	font-weight: 600;
+	text-align:center;
+}
+.taglist > li > a:hover {
+    background: var(--primarycolor);
+    background: -moz-linear-gradient(45deg, var(--primarycolor) 0%, var(--secondarycolor) 100%)!important;
+    background: -webkit-linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    background: linear-gradient(45deg, var(--primarycolor) 0%,var(--secondarycolor) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--primarycolor)', endColorstr='var(--secondarycolor)',GradientType=1 )!important;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+}
+
+.tag_count{
+	position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--pagebackground);
+    border-radius: var(--radius);
+    padding: 8px;
+    font-weight: 600;
+	}
+
+footer{
+	background: var(--boxbackground);
+	padding: 1rem;
+	margin-top: 3rem;
+}
+footer a{
+	color: #FFF;
+	font-weight: 600;
+}
+
+/* Design Guide */
+.ci_colors{display:flex; justify-content: space-between; gap: 2rem;}
+.ci_colors div{width: 100%; height: 200px; display:flex; align-items: center; justify-content: center;}
+.primary{background: var(--primarycolor);}
+.secondary{background: var(--secondarycolor);}
+.background01{background: var(--pagebackground);}
+.background02{background: var(--boxbackground);}
+
+/* Page Overlay */
+#pageoverlay {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+	align-items: center;
+	justify-content: center;
+}
+
+#pageoverlay .box{
+	max-width: 830px;
+	border-radius: var(--radius);
+	padding: 2rem;
+	text-align:left;
+	font-weight: 400;
+	margin: 2rem;
+    font-weight: 300;
+	background: var(--boxbackground);
+}
+#pageoverlay.showcontent{
+	display: flex!important;
+}
+
+
+@media only screen and (max-width:64em){
+	.logo{display:none}
+}
+
+@media only screen and (min-width:40em){
+	
+}
+
+@media only screen and (min-width:64em){
+	.header_line1 > div{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}		
+	
+	header {
+		position: fixed;
+	}
+	body {
+		padding-top: 4rem;
+	}
+}
