@@ -74,6 +74,8 @@ if (isset($_POST['page'])) {
 		// Zeitdifferenz berechnen
 		$diff = $now->diff($timestamp_datetime);
 
+		//print_r($diff);
+
 		// Verarbeiten der Zeitdifferenz
 		if ($diff->h == 0) {
 			// Differenz bis zu 24 Stunden
@@ -85,7 +87,7 @@ if (isset($_POST['page'])) {
 		} 
 		
 		
-		elseif ($diff->d < 7) {
+		elseif ($diff->d >= 1) {
 			if($diff->format('%d') != '1'){
 				$daylabel ="Tage";
 			}

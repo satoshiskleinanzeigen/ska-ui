@@ -116,9 +116,10 @@ if (isset($_POST['page'])) {
 		}
 		echo "</div>";
 		
-		
+		//$trustcheck = 'tustcheck';
+		$trustcheck = '';
 		?>	
-			<div data-sellerid="<?=$seller_id?>" class='profile_handle trustcheck'><?=$data[$i]['seller_handle']?></div>
+			<div data-sellerid="<?=$seller_id?>" class='profile_handle <?=$trustcheck?>'><?=$data[$i]['seller_handle']?></div>
 			<div class='date'><?=$date?></div>
 
 			<div class="menu">

@@ -5,6 +5,15 @@
 	<title>Satoshis Kleinanzeigen</title>
 	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="description" content="Fiat war gestern. Finde tolle Angebote und bezahle mit Bitcoin! Kaufe oder verkaufe Neues & Gebrauchtes auf Satoshis Kleinanzeigen. Hier wird Bicoin Lightning akzeptiert!">
+	<meta name="keywords" content="Kleinanzeigen, Satsoshi, E-Bay, Alternative">
+	<meta name="author" content="Satoshi Nakamoto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 	
 	  <!-- tag plugin-->
 	<script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
