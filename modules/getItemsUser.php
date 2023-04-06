@@ -33,11 +33,10 @@ if (isset($_POST['page'])) {
 		exit();
 	}
 
-
 	// Ausgabe des JSON-Objekts
 	for($i = 0; $i < count($data); $i++){
 
-	echo "<div class='item'>";
+	echo "<div class='item ".$data[$i]['pub_state']."'>";
 		echo "<div class='content'>";
 		if($data[$i]['photos'] != NULL){
 			echo "<div class='image'>";
@@ -98,6 +97,10 @@ if (isset($_POST['page'])) {
 			$onlinetime = $diff->format('%d '.$daylabel.' %h Stunden online');
 		} 
 		//##############
+		
+		if ($data[$i]['pub_state'] == 'unpublished') {
+			$onlinetime = "Inserat offline";
+		}
 
 		//$date = date('d.m.Y H:i', $data[$i]['post_date']);
 		$date = date('d.m.Y', $data[$i]['post_date']);
@@ -108,13 +111,23 @@ if (isset($_POST['page'])) {
 
 			<div class='date'><strong>Inseriert:</strong> <?=$date?></div>
 
-			<div class='date'><i style="color: green;" class="fa-sharp fa-solid fa-circle"></i>&nbsp;&nbsp; <?=$onlinetime?></div>
+			<div class='date state'><i class="fa-sharp fa-solid fa-circle"></i>&nbsp;&nbsp; <?=$onlinetime?></div>
 
 			<div class="menu">
 				<div class="menu_icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
 				<div class="menu_overlay">
+				
+				<?php
+					if ($data[$i]['pub_state'] == 'published') {
+				?>	
+				
 					<a class='tg_link' href='https://t.me/satoshiskleinanzeige/<?=$data[$i]['message_id']?>' target='_blank'><i class='fa-brands fa-telegram'></i> in Telegram Öffnen</a>
-					<a class='tg_link' href='https://telegram.me/JJ21420' target='_blank'><i class="fa-solid fa-trash"></i> Inserat löschen</a>
+					<!--<a class='tg_link' href='https://telegram.me/JJ21420' target='_blank'><i class="fa-solid fa-trash"></i> Inserat löschen</a>-->
+					
+				<?php
+					}
+				?>	
+					
 				</div>
 			</div>
 		
@@ -181,5 +194,5 @@ if (isset($_POST['page'])) {
 	echo "</div>";
 
 	}
-  
+
 ?>

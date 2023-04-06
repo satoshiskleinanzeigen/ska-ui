@@ -38,6 +38,10 @@
 	text-align:right;
 	font-size:0.8rem;
 }
+
+.item.published .state i{color: green;}
+.item.unpublished .state i{color: red;}
+
 	
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
