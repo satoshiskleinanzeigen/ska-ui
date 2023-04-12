@@ -30,13 +30,15 @@ $telegram_auth = new TG_AUTH();
                     url: "/auth/login",
                     data: user
                 })
-                .done(function(data) {  
+                .done(function(data) {
+		    window.location.replace(success_url);
                     window.open(success_url, "_self");
 
                 })
                 .fail(function(data) {
                     console.log(data);
                     //do something here to notify the user about the error
+		    alert("Sorry. Das hat leider nicht geklappt :( ");
                 });
             }
         </script>
