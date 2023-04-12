@@ -190,6 +190,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS => $postfields,
   CURLOPT_HTTPHEADER => array(
     'Authorization: Bearer '.$API_KEY,
+    'UserAuthData:' . base64_encode(json_encode($_SESSION['auth_data']));
   ),
 ));
 
