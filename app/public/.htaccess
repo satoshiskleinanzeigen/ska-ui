@@ -1,9 +1,3 @@
-RewriteCond %{HTTP_HOST} !^www.satoshiskleinanzeigen.space
-RewriteRule (.*) https://www.satoshiskleinanzeigen.space%{REQUEST_URI} [R=301,L] 
-
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
-
 RewriteEngine On
 RewriteOptions inherit
 #Everything to index.php for routing

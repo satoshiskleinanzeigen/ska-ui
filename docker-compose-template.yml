@@ -1,0 +1,15 @@
+version: '3'
+services:
+    php-apache:
+        image: skaui
+        container_name: skaui.php
+        restart: always
+        ports:
+            - 5026:80
+        volumes:
+            - ./app/public:/var/www/html:z
+            #- ./app/private:/var/www/private:z #for future use
+        environment:
+            TZ: "Europe/Berlin"
+        dns:
+            - "8.8.8.8"

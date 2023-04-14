@@ -20,9 +20,26 @@ $telegram_auth = new TG_AUTH();
         <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-login="<?php echo TG_BOT_NAME; ?>" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
         <script type="text/javascript">
 			let success_url = window.location.href;
+            let missing_name = false;
 		
             function onTelegramAuth(user) {
                 console.log(user);
+
+                if(user.hasOwnProperty('username')){
+                    if(user.username == ''){
+                        missing_name = true;
+                    }
+                }else{
+                    missing_name = true;
+                    
+                }
+
+                if(missing_name){
+                    alert("Sorry. Du hast in Telegram leider keinen Benutzernamen vergeben. Erledige dies bitte und versuche es dann noch einmal :( ");
+                    return;
+                }
+
+                
                 $.ajax({
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     dataType : "json",
@@ -31,14 +48,14 @@ $telegram_auth = new TG_AUTH();
                     data: user
                 })
                 .done(function(data) {
-		    window.location.replace(success_url);
+		            window.location.replace(success_url);
                     window.open(success_url, "_self");
 
                 })
                 .fail(function(data) {
                     console.log(data);
                     //do something here to notify the user about the error
-		    alert("Sorry. Das hat leider nicht geklappt :( ");
+		            alert("Sorry. Das hat leider nicht geklappt :( ");
                 });
             }
         </script>
