@@ -98,11 +98,15 @@ body {
 }
 
 h1{text-align: center;}
-h2{font-weight: 600; margin-top: 0; margin-bottom: 0.5rem;}
+h2{font-weight: 600; margin-top: 0; margin-bottom: 1rem;}
 
 .checklist {list-style-type: none; padding: 0px;}
 .checklist li {margin-left: 20px;}
 .checklist li:before {font-family: "Font Awesome 6 Free"; font-weight: 600; content: "\f00c"; padding-right: 10px; margin-left: -16px; color: var(--primarycolor);}
+
+.chevronlist {list-style-type: none; padding: 0px;}
+.chevronlist li {margin-left: 20px;}
+.chevronlist li:before {font-family: "Font Awesome 6 Free"; font-weight: 600; content: "\f054"; padding-right: 10px; margin-left: -16px; color: var(--primarycolor);}
 
 .errorlist {list-style-type: none; padding: 0px;}
 .errorlist li {margin-left: 20px;}
@@ -194,10 +198,9 @@ header {
 .logo {
 	position: relative;
     display: block;
-    padding: 0rem 0rem 0.2rem 0;
     color: #fff;
     width: 250px;
-    padding: 5px 0px 0px 0px;
+    padding: 1rem 0px 1rem 0px;
 }
 .logo span{
 	font-weight: 600;
@@ -211,19 +214,8 @@ header {
 }
 
 .logo_mobile {
-	position:relative;
 	display:block;
-	color: #fff;
-}
-.logo_mobile span{
-	font-weight: 600;
-	font-size: 2rem;
-}
-.logo_mobile i.sats{
-	font-size: 40px;
-	background: -webkit-linear-gradient(var(--primarycolor), var(--secondarycolor));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	max-width: 300px;
 }
 
 .useraction{
@@ -391,9 +383,13 @@ footer a{
 	display: flex!important;
 }
 
+@media only screen and (max-width:48em){
+	.logo{display:none}
+	.header_line1 {background: rgba(37, 45, 56, 1);}
+}
 
 @media only screen and (max-width:64em){
-	.logo{display:none}
+
 }
 
 @media only screen and (min-width:40em){

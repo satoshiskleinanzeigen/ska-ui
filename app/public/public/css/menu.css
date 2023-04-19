@@ -1,6 +1,8 @@
 /* Main Navigation */
 #cssmenu .open{border-bottom: 1px solid rgba(120, 120, 120, 0.2);}
 
+.cssmenu_mobile{display:flex; justify-content: space-between;}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -106,7 +108,6 @@
   position: absolute;
   left: -9999px;
   border-left: 1px solid transparent;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 #cssmenu.align-right ul ul {
   text-align: right;
@@ -140,7 +141,7 @@
 #cssmenu ul ul li a {
   border-bottom: 1px solid rgba(var(--profilebackground) 0.80);
   padding: 12px 15px;
-  min-width:270px;
+  min-width:220px;
   font-size: 0.9rem;
   text-decoration: none;
   color: var(--defaultcolor);
@@ -347,7 +348,7 @@
     right: 13px;
   }
   #cssmenu .submenu-button.submenu-opened:after {
-    background: var(--menubuttoncolor);
+    background: var(--defaultcolor);
   }
   #cssmenu .submenu-button:before {
     position: absolute;

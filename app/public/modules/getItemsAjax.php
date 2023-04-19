@@ -55,8 +55,13 @@ if (isset($_POST['page'])) {
 	// Ausgabe des JSON-Objekts
 	for($i = 0; $i < count($data); $i++){
 
+	//$date = date('d.m.Y H:i', $data[$i]['post_date']);
+	$date = date('d.m.Y', $data[$i]['post_date']);
+
 	echo "<div class='item'>";
 		echo "<div class='content'>";
+		echo "<div class='date'>".$date."</div>";
+		
 		if($data[$i]['photos'] != NULL){
 			echo "<div class='image'>";
 			echo "<div class='gallery".$i."'>";
@@ -94,9 +99,6 @@ if (isset($_POST['page'])) {
 				echo "<span class='new'><img src='/public/images/new.svg' alt='NEW'></span>";
 			}
 		}
-
-		//$date = date('d.m.Y H:i', $data[$i]['post_date']);
-		$date = date('d.m.Y', $data[$i]['post_date']);
 			
 		echo "<div class='profile'>";
 			
@@ -116,11 +118,17 @@ if (isset($_POST['page'])) {
 		}
 		echo "</div>";
 		
-		//$trustcheck = 'tustcheck';
-		$trustcheck = '';
+		
+		
+		if($data[$i]['verified'] == 1){
+			$verified = 'verified';
+		}
+		else{
+			$verified = '';
+		}
+		
 		?>	
-			<div data-sellerid="<?=$seller_id?>" class='profile_handle <?=$trustcheck?>'><?=$data[$i]['seller_handle']?></div>
-			<div class='date'><?=$date?></div>
+			<div data-sellerid="<?=$seller_id?>" class='profile_handle <?=$verified?>'><?=$data[$i]['seller_handle']?></div>
 
 			<div class="menu">
 				<div class="menu_icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>

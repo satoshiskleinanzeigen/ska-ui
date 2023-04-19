@@ -3,7 +3,7 @@
   $.fn.menumaker = function(options) {
       
       var cssmenu = $(this), settings = $.extend({
-        title: "<span class='logo'><i class='sats'>s</i><span>satoshis</span> KLEINANZEIGEN</span>",
+        title: "<span href='/' class='logo_mobile'><img src='/public/images/logo_white.svg'></span>",
         format: "dropdown",
         sticky: false
       }, options);
@@ -64,7 +64,7 @@
 $(document).ready(function(){
 
 $("#cssmenu").menumaker({
-   title: "<span class='logo_mobile'><i class='sats'>s</i><span>satoshis</span> KLEINANZEIGEN</span>",
+   title: "<span href='/' class='logo_mobile'><img src='/public/images/logo_white.svg'></span>",
    format: "multitoggle"
 });
 

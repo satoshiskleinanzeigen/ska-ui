@@ -119,7 +119,6 @@
 	$(document).on('click', '.profile_picture, .profile_handle', function() {
 
 		var sellerid = $(this).data('sellerid');
-		//$('#modal_content').html(userprofile);
 		
 		$.ajax({ // AJAX-Aufruf
 			url: '/modules/getProfileUser.php',

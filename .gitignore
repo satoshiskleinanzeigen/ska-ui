@@ -2,3 +2,4 @@ config.php
 apache.conf
 docker-compose.yml
 .htaccess
+.htpasswd
