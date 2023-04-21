@@ -343,18 +343,10 @@ class SK_API
         return file_get_contents($url, false, $context);
 
     }
-    /**
-     * Retrieves a list of Items belong to a loged in user.
-     *
-     * @return string The response content with published items.
-     */ 
-    public function get_user_items_by_tgid()
-    {
-        return $this->get($this->base_url . 'user/items');
-    }
+
 
     /**
-     * Retrieves a list of Items belong to a user by id.
+     * Retrieves a list of Items belong to a logged in user by id.
      *
      * @return string The response content with published and unpublished items.
      */ 
@@ -362,6 +354,29 @@ class SK_API
     {
         
         return $this->get($this->base_url . 'user/private/'.$_SESSION['id'].'/items',$user_auth_header=True);
+    }
+
+
+     /**
+     * Retrieves a list of Items belong to a user by id.
+     *
+     * @return string The response content with published items.
+     */ 
+    public function get_user_items_by_telegram_id($telegram_id)
+    {
+        
+        return $this->get($this->base_url . 'user/public/'.$telegram_id.'/items',$user_auth_header=True);
+    }
+
+    /**
+     * Retrieves info belong to a user by id.
+     *
+     * @return string The response content with published items.
+     */ 
+    public function get_user_info_by_telegram_id($telegram_id)
+    {
+        
+        return $this->get($this->base_url . 'user/public/'.$telegram_id.'/info',$user_auth_header=True);
     }
 }
 ?>
